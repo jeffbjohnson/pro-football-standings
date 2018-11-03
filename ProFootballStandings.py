@@ -254,7 +254,7 @@ if __name__ == '__main__':
     
     # Sort teams by records overall, division, conference, respectively
     def sort_record(division_list):
-        return division_list.sort(key=operator.attrgetter('wins', 'divisionWins', 'conferenceWins'), \
+        return division_list.sort(key=operator.attrgetter('wins', 'ties', 'divisionWins', 'divisionTies','conferenceWins', 'conferenceTies'), \
                              reverse=True)
     # Create and open output file
     out_file = open("NFL Season Standings.txt", 'w')  
